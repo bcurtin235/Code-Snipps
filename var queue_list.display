@@ -1,0 +1,15 @@
+var queue_betalist = [];
+i=0;
+$(document).ready(function(){
+$(".btn").click(function() {
+     //add container for form email//
+          var holder = $(".input").val();
+    //use container to stash email//
+        queue_betalist.push(holder);
+      $(".list-group").append("<li>"+ holder +'</li>');
+                i++;
+    });
+});//add email to stack//
+                          
+                          
+                     //display or copy to secondary list//
